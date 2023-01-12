@@ -6,19 +6,7 @@ from text_to_speech import *
 from PIL import Image
 from keras.applications.vgg16 import preprocess_input
 from keras.utils import load_img, img_to_array
-from time import sleep
-import argparse
 
-def predictor(frame):
-    frame = cv2.resize(frame, (300,300))
-    img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    img = Image.fromarray(img)
-    x = img_to_array(img)
-    x = expand_dims(x, axis=0)
-    img_data = preprocess_input(x)
-    classes = model.predict(img_data)[0]
-    pose = classifications[argmax(classes)]
-    t2s(pose)
 
 target = 0
 
@@ -58,5 +46,5 @@ def main():
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-    target = 'poses.mp4'
+    target = 'video.mp4'
     main()
