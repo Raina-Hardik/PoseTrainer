@@ -2,6 +2,7 @@ import sys
 import cv2
 import numpy as np
 from keras.models import load_model
+from mappings import index_description
 
 model = load_model('pose_classification_model.h5')
 
@@ -26,7 +27,7 @@ while True:
     class_idx = np.argmax(prediction)
 
     # Going to change print to speaking in next version
-    print(class_idx)                   
+    print(index_description[class_idx])                  
 
     if cv2.waitKey(1) & 0xFF == ord('q'): break
 
