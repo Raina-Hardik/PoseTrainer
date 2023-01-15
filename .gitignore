@@ -1,4 +1,4 @@
-sampleMedia/
 *.mp4
 *.jp*g
 *.h5
+__pycache__/
