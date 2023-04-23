@@ -9,7 +9,6 @@ In the modern world of recluse and recline, physical activity and improvement ha
 Human Pose Estimation(HPE) is the method of identifying and classifying human joints(key points) on the human body and correlating the same with physical postures and activities. The Estimation model intends to capture a set of key points on the body and classify the said points with respect to each other to establish a pair. A collection of said pairs can then further be used to calculate the respective vectors and thereby enable classification.
 The connections formed must be significant and thus not all possible key-points can be considered to correlate to form a connection. 
 
-### Machine Learning Paradigms
-The project involves 2 critical components driving the model forward. Identification and Classification of the human body and its postures.
+# Dataset Used: Yoga82
 
 [More on that here](https://docs.google.com/document/d/1Ec-rs_4qv8NYhD9RGGyia0hl0E-wUbsf5UO2hTUupYU/edit?usp=sharing)
